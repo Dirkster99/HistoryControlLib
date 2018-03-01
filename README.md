@@ -1,5 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/b5aljj6ec5cn10c0/branch/master?svg=true)](https://ci.appveyor.com/project/Dirkster99/historycontrollib/branch/master)
 [![Release](https://img.shields.io/github/release/Dirkster99/MRULib.svg)](https://github.com/Dirkster99/MRULib/releases/latest)
+[![NuGet](https://img.shields.io/nuget/dt/Dirkster.HistoryControlLib.svg)](http://nuget.org/packages/Dirkster.HistoryControlLib)
 
 # HistoryControlLib
 Implements a themable recent locations (forward, backward, up. pop-up list) control a la Windows (7-10) Explorer.
