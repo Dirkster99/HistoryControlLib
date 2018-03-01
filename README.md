@@ -4,6 +4,14 @@
 # HistoryControlLib
 Implements a themable recent locations (forward, backward, up. pop-up list) control a la Windows (7-10) Explorer.
 
+<img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/Back.png?raw=true" width="120">
+
+<img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/Forward.png?raw=true" width="120">
+
+<img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/Up.png?raw=true" width="120">
+
+<img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/RecentList.png?raw=true" width="120">
+
 ## Theming
 
 Load *Light* or *Dark* brush resources in you resource dictionary to take advantage of existing definitions.
