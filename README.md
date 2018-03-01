@@ -4,13 +4,19 @@
 # HistoryControlLib
 Implements a themable recent locations (forward, backward, up. pop-up list) control a la Windows (7-10) Explorer.
 
+The repository contains the sources for a Generic and a Dark and Light themed test client.
+
+## Navigate Back Direction
 <img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/Back.png?raw=true" width="120">
 
+## Navigate Forward Direction
 <img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/Forward.png?raw=true" width="120">
 
+## Navigate Up
 <img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/Up.png?raw=true" width="120">
 
-<img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/RecentList.png?raw=true" width="120">
+## Navigate within list of recently visited locations
+<img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Screenshots/RecentList.png?raw=true" width="360">
 
 ## Theming
 
