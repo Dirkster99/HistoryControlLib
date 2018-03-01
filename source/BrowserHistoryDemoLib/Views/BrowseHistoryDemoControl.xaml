@@ -1,0 +1,126 @@
+﻿<UserControl x:Class="BrowserHistoryDemoLib.Views.BrowseHistoryDemoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid xmlns:BHreskeys="clr-namespace:HistoryControlLib.Themes;assembly=HistoryControlLib"
+		      xmlns:controls="clr-namespace:HistoryControlLib.Controls;assembly=HistoryControlLib"
+              xmlns:behav="clr-namespace:HistoryControlLib.Behaviors;assembly=HistoryControlLib"
+              >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="16"/>
+            <ColumnDefinition Width="24"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0"
+                    Margin="3,3,0,3"
+                    Command="{Binding BackwardCommand}"
+                    HorizontalAlignment="Right" VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Right" VerticalContentAlignment="Stretch"
+                    Style="{DynamicResource {x:Static BHreskeys:ResourceKeys.HistoryButtonStyleKey}}"
+                >
+            <Button.ToolTip>
+                <TextBlock>
+                        <TextBlock Text="Back to: "/>
+                        <TextBlock Text="{Binding NaviHistory.NextBackwardItem.Path}"/>
+                    </TextBlock>
+            </Button.ToolTip>
+            <Button.Content>
+                <Grid>
+                    <Path HorizontalAlignment="Center"
+                              Data="{DynamicResource {x:Static BHreskeys:ResourceKeys.ArrowGeometryKey}}"
+                              Fill="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                              RenderTransformOrigin=".5,.5"
+                              Stretch="Uniform">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="180" />
+                                <ScaleTransform ScaleX="0.75" ScaleY="0.75" />
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
+            </Button.Content>
+        </Button>
+
+        <Button Grid.Column="1"
+                    Margin="0,3,0,3"
+                    Command="{Binding ForwardCommand}"
+                    HorizontalAlignment="Left" VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Left" VerticalContentAlignment="Stretch"
+                    Style="{DynamicResource {x:Static BHreskeys:ResourceKeys.HistoryButtonStyleKey}}"
+                >
+            <Button.ToolTip>
+                <TextBlock>
+                        <TextBlock Text="Forward to: "/>
+                        <TextBlock Text="{Binding NaviHistory.NextForwardItem.Path}"/>
+                    </TextBlock>
+            </Button.ToolTip>
+            <Button.Content>
+                <Grid>
+                    <Path HorizontalAlignment="Center"
+                              Data="{DynamicResource {x:Static BHreskeys:ResourceKeys.ArrowGeometryKey}}"
+                              Fill="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                              RenderTransformOrigin=".5,.5"
+                              Stretch="Uniform">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="0.7" ScaleY="0.7" />
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
+            </Button.Content>
+        </Button>
+
+        <controls:LocationsDropDown
+                Grid.Column="2"
+                ItemsSource="{Binding NaviHistory.Locations}"
+                HorizontalAlignment="Left"
+                behav:SelectionChangedCommand.ChangedCommand="{Binding SelectionChanged}"
+                SelectedItem="{Binding NaviHistory.SelectedItem,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                ToolTip="Recent Locations"
+            >
+            <controls:LocationsDropDown.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path}"/>
+                </DataTemplate>
+            </controls:LocationsDropDown.ItemTemplate>
+        </controls:LocationsDropDown>
+
+        <Button Grid.Column="3" Grid.Row="0"
+                    Margin="3"
+                    Command="{Binding UpCommand}"
+                    ToolTip="Up"
+                    HorizontalAlignment="Center" VerticalAlignment="Stretch"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch"
+                    Style="{DynamicResource {x:Static BHreskeys:ResourceKeys.HistoryButtonStyleKey}}"
+                >
+            <Button.Content>
+                <Grid>
+                    <Path HorizontalAlignment="Right"
+                              Data="{DynamicResource {x:Static BHreskeys:ResourceKeys.ArrowGeometryKey}}"
+                              Fill="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                              RenderTransformOrigin=".5,.5"
+                              Stretch="Uniform">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="270" />
+                                <ScaleTransform ScaleX="0.7" ScaleY="0.7" />
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
+            </Button.Content>
+        </Button>
+    </Grid>
+</UserControl>

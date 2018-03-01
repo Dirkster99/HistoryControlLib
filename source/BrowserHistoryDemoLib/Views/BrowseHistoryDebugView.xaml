@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="BrowserHistoryDemoLib.Views.BrowseHistoryDebugView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Grid.Column="1">
+        <GroupBox Header="Test Data Display">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Selected Location:" HorizontalAlignment="Right"/>
+                <TextBox DataContext="{Binding NaviHistory.SelectedItem}"
+                             Text="{Binding Path,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                             Name="NewPathInputBox"
+                             VerticalAlignment="Center"
+                             VerticalContentAlignment="Center"
+                             Grid.Column="1"
+                            />
+                <Button Grid.Column="2" Content="Go" Padding="3" Margin="3" MinHeight="23"
+                            Command="{Binding ForwardLocationCommand}"
+                            CommandParameter="{Binding ElementName=NewPathInputBox,Path=Text}"
+                            />
+
+                <Label Grid.Row="1" Grid.Column="0" Content="Locations:" HorizontalAlignment="Right"/>
+                <ListBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                             DataContext="{Binding NaviHistory}"
+                             ItemsSource="{Binding Locations, Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                             IsEnabled="False"
+                             SelectedItem="{Binding SelectedItem,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                            >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </GroupBox>
+    </Grid>
+
+</UserControl>
