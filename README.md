@@ -2,7 +2,12 @@
 [![Release](https://img.shields.io/github/release/Dirkster99/MRULib.svg)](https://github.com/Dirkster99/MRULib/releases/latest)
 [![NuGet](https://img.shields.io/nuget/dt/Dirkster.HistoryControlLib.svg)](http://nuget.org/packages/Dirkster.HistoryControlLib)
 
-# HistoryControlLib
+<table border="0" width="100%">
+<tr>
+    <td><img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Branch_32x.png?raw=true" width="24"/></td> <td><h1>HistoryControlLib</h1></td>
+</tr>
+</table>
+
 Implements a themable recent locations (forward, backward, up. pop-up list) control a la Windows (7-10) Explorer.
 
 The repository contains the sources for a Generic and a Dark and Light themed test client.
