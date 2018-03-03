@@ -8,7 +8,7 @@
 </tr>
 </table>
 
-Implements a themable recent locations (forward, backward, up. pop-up list) control a la Windows (7-10) Explorer.
+Implements a themable recent locations (forward, backward, up. pop-up list) control a la <a href="https://github.com/Dirkster99/fsc/wiki/FSC-Windows-Explorer-(Cloned)">Windows (7-10) Explorer</a>.
 These controls and viewmodels are re-used in the <a href="https://github.com/Dirkster99/fsc">File System Controls</a> project which in turn is integrated in <a href="https://github.com/Dirkster99/Edi">Edi</a>.
 
 The repository contains the sources for a Generic and a Dark and Light themed test client.
