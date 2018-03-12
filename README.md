@@ -13,7 +13,7 @@ These controls and viewmodels are re-used in the <a href="https://github.com/Dir
 
 The repository contains the sources for a Generic and a Dark and Light themed test client.
 
-The <a href="https://github.com/Dirkster99/HistoryControlLib/blob/master/source/HistoryControlLib/Controls/LocationsDropDown.xaml">Locations Drop-Down button</a> makes use of the Segoe UI Symbol font, which may not
+The <a href="https://github.com/Dirkster99/HistoryControlLib/blob/master/source/HistoryControlLib/Controls/LocationsDropDown.xaml">Locations Drop-Down button</a> makes use of the **Segoe UI Symbol** font, which may not
 always be available on Windows 7. The font can either be installed via update from Microsoft of the drop down
 button definition for the down chevron can be replaced with a path definition.
 
