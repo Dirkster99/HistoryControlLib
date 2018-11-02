@@ -9,15 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoryControlLib", "Histor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserHistoryDemoLib", "BrowserHistoryDemoLib\BrowserHistoryDemoLib.csproj", "{D0CA35BB-2EC3-42D6-A329-D86EF8287DC7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binaries", "Binaries", "{559D87FB-9D5E-45BF-84AA-44CE43BD0BE1}"
-	ProjectSection(SolutionItems) = preProject
-		Binaries\Microsoft.Expression.Interactions.dll = Binaries\Microsoft.Expression.Interactions.dll
-		Binaries\MLib.dll = Binaries\MLib.dll
-		Binaries\MWindowInterfacesLib.dll = Binaries\MWindowInterfacesLib.dll
-		Binaries\MWindowLib.dll = Binaries\MWindowLib.dll
-		Binaries\System.Windows.Interactivity.dll = Binaries\System.Windows.Interactivity.dll
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowseHistoryThemesDemo", "BrowseHistoryThemesDemo\BrowseHistoryThemesDemo.csproj", "{5F1D60B6-0A78-48E1-A771-F328FF1E900B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{93D408BA-AD96-41C7-9BA1-83727BB3546E}"
