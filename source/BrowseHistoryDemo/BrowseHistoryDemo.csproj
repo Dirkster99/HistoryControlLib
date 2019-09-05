@@ -99,7 +99,7 @@
       <Name>BrowserHistoryDemoLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\HistoryControlLib\HistoryControlLib.csproj">
-      <Project>{54a1d71e-3dad-4eab-b2a4-22e0c69ddb2e}</Project>
+      <Project>{93394321-71d7-47a8-86b5-76aff001c9a2}</Project>
       <Name>HistoryControlLib</Name>
     </ProjectReference>
   </ItemGroup>

@@ -58,12 +58,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HistoryControlLib\HistoryControlLib.csproj">
-      <Project>{54a1d71e-3dad-4eab-b2a4-22e0c69ddb2e}</Project>
-      <Name>HistoryControlLib</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="Views\BrowseHistoryDebugView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -72,6 +66,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HistoryControlLib\HistoryControlLib.csproj">
+      <Project>{93394321-71d7-47a8-86b5-76aff001c9a2}</Project>
+      <Name>HistoryControlLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
