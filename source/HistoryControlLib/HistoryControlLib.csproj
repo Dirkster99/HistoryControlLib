@@ -20,7 +20,7 @@
       <RepositoryUrl>https://github.com/Dirkster99/HistoryControlLib</RepositoryUrl>
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
       <PackageTags>wpf mvvm c# .net metro black light themed control library recent locations forward backward up history control</PackageTags>
-      <IconUrl>https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Branch_64x.png?raw=true</IconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Dirkster99/Docu/master/HistoryControlLib/Branch_64x.png</PackageIconUrl>
       <PackageLicenseExpression>MIT</PackageLicenseExpression>
       <PackageReleaseNotes>Package Update with support based on .NetCore 3 Preview 8 and .Net4.5.</PackageReleaseNotes>
       <NeutralLanguage>en</NeutralLanguage>
