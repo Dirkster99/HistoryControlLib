@@ -2,6 +2,8 @@
 [![Release](https://img.shields.io/github/release/Dirkster99/MRULib.svg)](https://github.com/Dirkster99/MRULib/releases/latest)
 [![NuGet](https://img.shields.io/nuget/dt/Dirkster.HistoryControlLib.svg)](http://nuget.org/packages/Dirkster.HistoryControlLib)
 
+![Net4](https://badgen.net/badge/Framework/.Net&nbsp;4/blue) ![NetCore3](https://badgen.net/badge/Framework/NetCore&nbsp;3/blue)
+
 <table border="0" width="100%">
 <tr>
     <td><img src="https://github.com/Dirkster99/Docu/blob/master/HistoryControlLib/Branch_32x.png?raw=true" width="24"/></td> <td><h1>HistoryControlLib</h1></td>
